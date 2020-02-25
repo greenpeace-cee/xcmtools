@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<extension key="xcmtools" type="module">
+  <file>xcmtools</file>
+  <name>XCM Tools</name>
+  <description>This extension makes various changes to the behaviour of XCM.</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Patrick Figel</author>
+    <email>pfigel@greenpeace.org</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/greenpeace-cee/xcmtools</url>
+    <url desc="Documentation">https://github.com/greenpeace-cee/xcmtools</url>
+    <url desc="Support">https://github.com/greenpeace-cee/xcmtools/issues</url>
+    <url desc="Licensing">https://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2020-02-25</releaseDate>
+  <version>1.0-alpha.1</version>
+  <develStage>alpha</develStage>
+  <requires>
+    <ext>de.systopia.xcm</ext>
+  </requires>
+  <compatibility>
+    <ver>5.0</ver>
+  </compatibility>
+  <comments></comments>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Xcmtools</namespace>
+  </civix>
+</extension>
