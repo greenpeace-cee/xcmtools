@@ -1,5 +1,7 @@
 # xcmtools
 
+[![CircleCI](https://circleci.com/gh/greenpeace-cee/xcmtools.svg?style=svg)](https://circleci.com/gh/greenpeace-cee/xcmtools)
+
 This CiviCRM extension makes various changes to the behaviour of [XCM](https://github.com/systopia/de.systopia.xcm).
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).

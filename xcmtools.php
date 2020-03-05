@@ -1,7 +1,6 @@
 <?php
 
 require_once 'xcmtools.civix.php';
-use CRM_Xcmtools_ExtensionUtil as E;
 
 /**
  * Implements hook_civicrm_config().

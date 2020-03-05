@@ -11,7 +11,7 @@ class EmailLocationType implements \API_Wrapper {
   }
 
   /**
-   * Change location type of any email passed to XCM to the prim
+   * Change location type of any email passed to XCM to the XCM default
    */
   public function toApiOutput($apiRequest, $result) {
     if (!empty($result['id']) && !empty($apiRequest['params']['email'])) {
