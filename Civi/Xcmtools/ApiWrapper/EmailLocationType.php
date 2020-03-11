@@ -15,11 +15,12 @@ class EmailLocationType implements \API_Wrapper {
    */
   public function toApiOutput($apiRequest, $result) {
     if (!empty($result['id']) && !empty($apiRequest['params']['email'])) {
-      $config = \CRM_Xcm_Configuration::getConfigProfile($apiRequest['params']['xcm_profile'] ?? null);
+      $config = \CRM_Xcm_Configuration::getConfigProfile($apiRequest['params']['xcm_profile'] ?? NULL);
       Email::update()
         ->addWhere('contact_id', '=', $result['id'])
         ->addWhere('email', '=', $apiRequest['params']['email'])
         ->addValue('location_type_id', $config->defaultLocationType())
+        ->setCheckPermissions(FALSE)
         ->execute();
     }
     return $result;
