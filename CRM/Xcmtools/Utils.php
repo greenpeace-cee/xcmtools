@@ -10,6 +10,7 @@ class CRM_Xcmtools_Utils {
   public static function getApiWrappers() {
     return [
       new Civi\Xcmtools\ApiWrapper\EmailLocationType(),
+      new Civi\Xcmtools\ApiWrapper\PhoneLocationType(),
     ];
   }
 
