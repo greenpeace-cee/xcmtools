@@ -21,13 +21,15 @@
     <ext>de.systopia.xcm</ext>
   </requires>
   <compatibility>
-    <ver>5.0</ver>
+    <ver>5.69</ver>
   </compatibility>
   <comments/>
   <classloader>
     <psr4 prefix="Civi\" path="Civi"/>
+    <psr0 prefix="CRM_" path="."/>
   </classloader>
   <civix>
     <namespace>CRM/Xcmtools</namespace>
+    <format>23.02.1</format>
   </civix>
 </extension>
